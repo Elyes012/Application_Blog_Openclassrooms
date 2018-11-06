@@ -55,5 +55,8 @@ export class PostService {
     console.log(`loveNumber: ${ this.posts[index].loveIts }`);
     this.emitPostsSubject();
   }
-
+  removePost(post: Post) {
+    this.posts.splice(this.posts.findIndex(postObj => postObj === post), 1)
+    this.emitPostsSubject();
+  }
 }

@@ -20,3 +20,6 @@ p{
 .btn-primary{
     float: right;
 }
+.btn-remove {
+    float: right !important;
+}
